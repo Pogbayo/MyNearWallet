@@ -1,0 +1,127 @@
+.container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  
+  .cardDiv {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 0;
+    max-width: 1400px;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* Ensure responsiveness by wrapping on small screens */
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%; /* Ensure each card takes up 30% on large screens */
+    max-width: 300px;
+    margin: 1rem;
+  }
+  
+  .card img {
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  
+  .card h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .bottomDiv {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+  }
+  
+  .bottomDiv h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .bottomDivImages {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 50%;
+  }
+  
+  .bottomDivImages img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 1000px) {
+    .container{
+        padding: 0;
+    }
+    .card {
+        max-width: 1000px;
+        width: 100%; /* 2 items per row for medium-sized screens */
+    }
+    .card>p{
+        width: 80%;
+        font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width:900px){
+    .bottomDiv{
+        gap: 9px;
+    }
+    .bottomDivImages{
+        width: 80%;
+    }
+    .bottomDivImages img {
+        width: 40px;
+        height: auto;
+        object-fit: contain;
+      }
+  }
+  
+  @media (max-width:700px){
+    .bottomDiv{
+      flex-direction: column;
+    }
+    .bottomDivImages img {
+      width: 70px;
+      height: auto;
+      object-fit: contain;
+
+    }
+    .bottomDivImages{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }

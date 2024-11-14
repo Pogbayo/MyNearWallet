@@ -1,0 +1,145 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .header {
+    font-size: 2.9rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .cardDiv {
+    display: flex;
+    width: 90%;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    height: 700px;
+    padding: 2rem;
+  }
+  
+  .cardDiv1 {
+    background-color: #ece6e0;
+    padding: 2rem;
+    border-radius: 40px;
+  }
+  
+  .cardDiv2 {
+    background-color: #e4eefa;
+    padding: 2rem;
+    border-radius: 40px;
+  }
+  
+  .cardDiv3 {
+    background-color: #f6eef7;
+    padding:2rem;
+    border-radius: 40px;
+
+  }
+  
+  .imageDiv {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .contentDiv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .contentDiv > div:last-child {
+    margin-top: auto; 
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .cardTitle {
+    font-size: 3.2rem;
+    font-weight: 900;
+  }
+  
+  .cardDescription {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  .cardFooter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+  }
+  
+  .arrowIcon {
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    padding: 10px;
+    background-color: inherit;
+    border: 1px solid black;
+  }
+  
+  @media (max-width: 1000px) {
+    .cardDiv {
+      width: 90%;
+      flex-direction: column-reverse;
+      height: auto;
+      gap: 0.1rem;
+      padding: 1rem;
+
+    }
+    .cardImage {
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
+      }
+    .imageDiv {
+      width: 95%;
+      height: 50%;
+      text-align: center;
+    }
+    .cardTitle{
+      font-size: 1.5rem;
+    }
+    .cardDescription{
+      font-size: 0.9rem;
+      text-align: center;
+      line-height: 20px;
+    }
+    .contentDiv{
+      width: 95%;
+      height: 50%;
+      text-align: center;
+    }
+   .cardDiv2{
+    display: flex;
+    /* flex-direction: column-reverse; */
+   }
+   .contentDiv > div:last-child {
+      display: flex;      
+      justify-content: center;
+  }
+  .contentDiv {
+    order: 1;
+  }
+
+  .imageDiv {
+    order: 2;
+  }
+  }
+  

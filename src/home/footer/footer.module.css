@@ -1,0 +1,133 @@
+.container{
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 20px;
+    background-color: #333;
+}
+.footerDiv1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerLogo{
+    width: 300px;
+}
+.footerNavLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.footerNavLinks>a{
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footerNavLinks>span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: auto;
+    padding: 10px;
+}
+.footerNavLinks>span>img{
+    width: 60px;
+}
+.divider{
+    width: 1px;
+    height: 30px;
+    border-left: 1px solid gray;
+}
+.footerNavLinks>span>small{
+   color: white;
+   font-size: 20px;
+}
+.footerDiv2{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    color: gray;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+.footerSocialsDiv{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    padding-right: 30px;
+    justify-content: flex-end;
+}
+.footerSocialsDiv>img{
+    width: 50px;
+}
+.copywright{
+    font-size: 20px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sp{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+@media (max-width:1322px){
+    .container{
+        height: auto;
+        gap: 5px;        
+
+    }
+    .footerDiv1{
+        gap: 20px;
+        padding: 20px;
+        flex-direction: column;        
+
+    }
+    .footerDiv2{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .footerSocialsDiv{
+        justify-content: center;
+        width: auto;
+    }
+    .footerNavLinks{
+        width: 90%;        
+
+    }
+    .copywright{
+        gap: 15px;        
+
+    }
+    .sp{
+        width: 30%;        
+
+    }
+    .copywright{
+        display: flex;
+        flex-direction: column-reverse;        
+
+    }
+}
+@media (max-width:1022px){
+    .divider{
+        display: none;
+    }
+    .footerNavLinks{
+        flex-direction: column;
+        gap: 30px;        
+
+    }
+}
