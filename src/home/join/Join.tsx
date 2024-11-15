@@ -1,5 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./join.module.css";
 export const Join = () => {
+  const navigate = useNavigate();
+  const handleNavigation = () => {
+    navigate("/coin");
+  };
   return (
     <div className={styles.container}>
       <section className={styles.joinImageDiv}>
@@ -10,7 +15,9 @@ export const Join = () => {
         A simple, secure and scalable blockchain technology where you can invent
         and explore new experiences
       </p>
-      <button className={styles.batin}>Create Account</button>
+      <button className={styles.batin} onClick={handleNavigation}>
+        Create Account
+      </button>
     </div>
   );
 };

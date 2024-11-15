@@ -20,7 +20,12 @@ export const Homepage = () => {
         >
           Create Account
         </button>
-        <button className={styles.importAccountButton}>Import Account</button>
+        <button
+          className={styles.importAccountButton}
+          onClick={handleNavigation}
+        >
+          Import Account
+        </button>
       </div>
 
       <img

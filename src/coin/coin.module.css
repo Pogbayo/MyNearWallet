@@ -3,6 +3,7 @@
     width: 100%;
     height: auto;
     margin: 0;
+    color: black;
     padding-top: 20px;
     box-sizing: border-box;    
     text-align: center;   
@@ -10,8 +11,9 @@
 .nav{
    display: flex; 
    justify-content: center; 
-   margin: 1px;
+   margin: 0 auto;
    height: 70px;
+   width: 95%;
    align-items: center;
    background-color: black;
 }
@@ -53,6 +55,8 @@
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left:10px ;
+    padding-right: 10px;
 }
 .icons{
     margin-top: 2px;
