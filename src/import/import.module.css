@@ -1,0 +1,101 @@
+.container {
+    padding: 2rem;
+    background-color: aliceblue;
+    border: 2px solid black;
+  }
+ 
+ 
+  .content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .boxGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .box {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .box p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .box button {
+    background-color: #2677ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    padding: 10px;
+    width: auto;
+    border-radius: 7px;
+    height: auto;
+    max-width: 190px;
+    font-size: 0.9rem;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .box h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #333;
+      }
+    .boxGrid {
+        padding: 10px;
+      grid-template-columns: 1fr;
+    }
+  
+    .box {
+      padding: 1rem;
+      width: 90%;
+      margin: auto;
+    }
+  
+    button {
+      width: auto;
+    }
+  }
+  

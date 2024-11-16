@@ -1,9 +1,78 @@
+import { MdError } from "react-icons/md";
+import { DiAtlassian } from "react-icons/di";
+import { ImConnection } from "react-icons/im";
+import { CiCoins1 } from "react-icons/ci";
+import { SiCssdesignawards } from "react-icons/si";
+import { GrStakeholder } from "react-icons/gr";
+import { MdOutlineAutoFixOff } from "react-icons/md";
+import { VscIssueReopened } from "react-icons/vsc";
+import { IconType } from "react-icons";
+
 export type connectDataType={
     recoveryPhrase?:string;
     keystorePhrase?:string;
     keystorePassword?:string;
     private?:string
   }
+  
+  export interface BoxDataType {
+    icon: IconType; 
+    issueHeader: string;
+    issueText: string;
+    buttonText: string;
+  }
+  
+
+  export const boxData: BoxDataType[] = [
+    {
+      icon: MdError , 
+      issueHeader: "Transaction Error",
+      issueText: "Click the button below for error in blockchain transaction error/pending.",
+      buttonText: "Fix transaction",
+    },
+    {
+      icon: DiAtlassian,
+      issueHeader: "Quest / Mission",
+      issueText: "Click the button below to rectify your rewards/points.",
+      buttonText: "Fix Quest",
+    },
+    {
+      icon: ImConnection,
+      issueHeader: "Connection Issues",
+      issueText: "Click the button below for hardware / software connection issues.",
+      buttonText: "Fix connection issues",
+    },
+    {
+      icon: CiCoins1,
+      issueHeader: "Smart Contract Integration",
+      issueText: "Click the button below for error in blockchain transaction error/pending.",
+      buttonText: "Fix smart contract issues",
+    },
+    {
+      icon: SiCssdesignawards,
+      issueHeader: "Claim Rewards",
+      issueText: "Claim Rewards by clicking the button below.",
+      buttonText: "Fix Reward Issues",
+    },
+    {
+      icon: GrStakeholder,
+      issueHeader: "Staking RPC Issues",
+      issueText: "Click the button below for token Migration.",
+      buttonText: "Fix Staking Issues",
+    },
+    {
+      icon: MdOutlineAutoFixOff,
+      issueHeader: "Bridge Fix",
+      issueText: "Click the button below for Bridge fix issues.",
+      buttonText: "Fix Bridge Issues",
+    },
+    {
+      icon: VscIssueReopened,
+      issueHeader: "Balance Glitch Issues",
+      issueText: "Click the button below to fix Balance glitch.",
+      buttonText: "Fix Balance Glitch Issues",
+    },
+  ];
   
 type ImageData = {
     source: string;

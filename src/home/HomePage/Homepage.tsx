@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export const Homepage = () => {
   const navigate = useNavigate();
   const handleNavigation = () => {
-    navigate("/coin");
+    navigate("/import");
   };
   return (
     <div className={styles.container}>

@@ -7,6 +7,7 @@ import { Join } from "./home/join/Join";
 import { Nav } from "./home/navbar/Nav";
 import { Tools } from "./home/Tools/Tools";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Import } from "./import/Import";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           />
           <Route path="/coin" element={<CoinPage />} />
           <Route path="/form" element={<Formdata />} />
+          <Route path="/import" element={<Import />} />
         </Routes>
       </div>
     </Router>
