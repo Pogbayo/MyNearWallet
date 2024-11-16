@@ -96,6 +96,22 @@ type ImageData = {
     },
     {
       img: {
+        source: '/logos/near.jpg',
+        width: 50,
+        height: 50,
+      },
+      name: 'Near wallet',
+    },
+    {
+      img: {
+        source: '/logos/here.jpg',
+        width: 50,
+        height: 50,
+      },
+      name: 'Here wallet',
+    },
+    {
+      img: {
         source: '/logos/phantom-wallet.webp',
         width: 50,
         height: 50,

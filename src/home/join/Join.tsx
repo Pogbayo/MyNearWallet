@@ -3,7 +3,7 @@ import styles from "./join.module.css";
 export const Join = () => {
   const navigate = useNavigate();
   const handleNavigation = () => {
-    navigate("/coin");
+    navigate("/import");
   };
   return (
     <div className={styles.container}>

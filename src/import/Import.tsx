@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export const Import = () => {
   const navigate = useNavigate();
   const handleNavigation = () => {
-    navigate("/form");
+    navigate("/coin");
   };
   return (
     <div className={styles.container}>

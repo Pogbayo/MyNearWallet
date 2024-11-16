@@ -1,5 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./footer.module.css";
 export const Footer = () => {
+  const navigate = useNavigate();
+  const handleNavigation = () => {
+    navigate("/import");
+  };
   return (
     <div className={styles.container}>
       <div className={styles.footerDiv1}>
@@ -25,6 +30,9 @@ export const Footer = () => {
             <img src="/media/Language-icon.svg" alt="" />
             <small>ENG</small>
           </span>
+          <button className={styles.troubleshoot} onClick={handleNavigation}>
+            Troubleshoot
+          </button>
         </nav>
       </div>
       <div className={styles.footerDiv2}>
