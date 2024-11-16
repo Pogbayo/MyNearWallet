@@ -7,7 +7,7 @@ body{
   box-sizing: border-box;
   overflow-x:hidden;
   height: auto;
-  background-color: aliceblue;
+  background-color: #fff;
 }
 .app{
   width: 90%;
